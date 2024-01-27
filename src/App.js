@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import Aunth from './Components/Aunth/Aunth.jsx'
+import Chapters from './Components/Chapters/Chapters.jsx'
+import CreateChapter from './Components/CreateChapters/CreateChapter.jsx'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [chapters, setChapters] = useState(null)
+	const [createChpaters, setCreateMode] = useState(-1)
+	return (
+		<div className={chapters === null && 'aunthBackground'}>
+			{chapters === null && <Aunth setResponse={setChapters} />}
+			{chapters !== null && createChpaters === -1 && (
+				<Chapters {...{ setCreateMode, chapters }} />
+			)}
+			{createChpaters !== -1 && (
+				<CreateChapter {...{ setCreateMode, createChpaters, setChapters }} />
+			)}
+		</div>
+	)
 }
 
-export default App;
+export default App

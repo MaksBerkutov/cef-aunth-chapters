@@ -1,0 +1,155 @@
+.forms {
+  margin-left: 30px;
+}
+
+.btnActive,
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #ffffffd2;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-bottom: 3px solid transparent;
+}
+
+@keyframes bordeShow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes borderHide {
+  0% {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.containerBackground:not(:hover) {
+  animation: borderHide 0.5s ease-in-out forwards;
+}
+
+.containerBackground:hover {
+  animation: bordeShow 0.5s ease-in-out forwards;
+}
+
+.containerBackground {
+
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px 10px 10px 50px;
+
+}
+
+.btnActive {
+  color: white;
+}
+
+.btnActive::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: rgb(133, 0, 0);
+  transition: width 0.3s ease;
+  width: calc(100% + 2px);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #e74c3c;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::before {
+  width: calc(100% + 2px);
+}
+
+
+
+.conntentLogin {
+  margin-bottom: auto;
+
+}
+
+.loginContainer {
+  border-radius: 50px 0 0 50px;
+  display: flex;
+
+  background: linear-gradient(to right, rgba(66, 69, 73, 0.8), rgba(66, 69, 73, 0));
+  height: 480px;
+  width: 500px;
+  flex-direction: column;
+
+}
+
+.btnConfirm {
+  width: 90px;
+  height: 50x;
+  border-radius: 10px;
+  color: white;
+  transition: .2s linear;
+  background: #0B63F6;
+}
+
+.btnConfirm:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+.centerItemsTop,
+.centerItemsBottom {
+  display: flex;
+  justify-content: center;
+}
+
+.centerItemsTop {
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.centerItemsBottom {
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.container {
+  background-image: url('./image.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

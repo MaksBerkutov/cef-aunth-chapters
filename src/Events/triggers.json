@@ -1,0 +1,18 @@
+{
+	"TriggerLogin": "CEF:CLIENT::AUNTIFICATION_BUTTON_CLICKED",
+	"TriggerRegister": "CEF:CLIENT::REGISTER_BUTTON_CLICKED",
+	"TriggerErrorAuntification": "CLIENT:CEF::ERROR_AUNTIFICATION",
+	"TriggerErrorRegister": "CLIENT:CEF::ERROR_REGISTER",
+	"TriggerDisconnectMany": "CLIENT:CEF::DISCONNECT_MANY",
+	"TriigerGetChapters": "CLIENT:CEF::GET_ALL_CHAPTERS_USER",
+	"TriggerSpawnUsers": "CEF:CLIENT::SPAWN_SELECTED_PERSON",
+	"TriggerCreatePerson": "CEF:CLIENT::CREATE_CHAPTER",
+
+	"TriggerUpdateGender": "CEF:CLIENT::UPDATE_GENDER_PERSON",
+	"TriigerUpdateCustomizationPerson": "CEF:CLIENT::UPDATE_CUSTOMIZTION_PERSON",
+	"TriggerCreateCamera": "CEF:CLIENT::CREATE_CAMERA_CHAPTERS_SYS",
+	"TriggerRemoveCamera": "CEF:CLIENT::CREATE_CAMERA_CHAPTERS_SYS",
+	"TriggerSuscssesfulReg": "CLIENT:CEF::REGISTARTION_SUCSSESFUL",
+	"TriggerCreatedChapterSucssesful": "CLIENT:CEF::CREATE_CHAPTRE_SUCSS",
+	"": ""
+}

@@ -1,0 +1,15 @@
+.ListContainer {
+  display: flex;
+  align-items: center;
+}
+
+.ArrowButton {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.Text {
+  font-size: 18px;
+  margin-right: auto;
+  margin-left: auto;
+}
